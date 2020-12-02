@@ -6,7 +6,12 @@ module.exports = (sequelize, DataTypes) => {
 		},
 		balance: {
 			type: DataTypes.INTEGER,
-			defaultValue: 0,
+			defaultValue: 1000,
+			allowNull: false,
+		},
+		daily: {
+			type: DataTypes.STRING,
+			defaultValue: '2020-11-30T22:00',
 			allowNull: false,
 		},
 	}, {
