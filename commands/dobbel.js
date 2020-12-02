@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'dobbel',
 	description: 'Ping!',
-	execute(message, currency,commandArgs,Discord) {
+    execute(message, currency,commandArgs,Discord,Date) {
         const currentAmount = currency.getBalance(message.author.id);
 
         const num = commandArgs.split(' ');

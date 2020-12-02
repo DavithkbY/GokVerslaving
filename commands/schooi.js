@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'schooi',
 	description: 'Schooi!',
-    execute(message, currency,Date) {
+    execute(message, currency,commandArgs,Discord,Date) {
         const target = message.mentions.users.first() || message.author;
 
         currency.getDaily(target.id).then(function(result) {

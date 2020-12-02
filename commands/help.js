@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'help',
 	description: 'Help!',
-    execute(message, Discord) {
+    execute(message, currency,commandArgs,Discord,Date) {
         const commandList = new Discord.MessageEmbed()
         .setColor('#009900')
         .setTitle('GokVerslaving')

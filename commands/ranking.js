@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'ranking',
 	description: 'Ranking!',
-    execute(message, currency,commandArgs,Discord,client) {
+    execute(message, currency,commandArgs,Discord,Date) {
         message.channel.send(
             currency.sort((a, b) => b.balance - a.balance)
                 .filter(user => client.users.cache.has(user.user_id))

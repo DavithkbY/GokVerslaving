@@ -1,7 +1,7 @@
 module.exports = {
 	name: 'overschrijving',
 	description: 'Overschrijving!',
-	execute(message, currency,commandArgs) {
+    execute(message, currency,commandArgs,Discord,Date) {
         const currentAmount = currency.getBalance(message.author.id);
         const transferAmount = commandArgs.split(/ +/g).find(arg => !/<@!?\d+>/g.test(arg));
         const transferTarget = message.mentions.users.first();
